@@ -8,7 +8,7 @@ description:
 
 deployment:
   template: l3_north_south.hot
-  accommodation: [pair, double_room, density: 8, compute_nodes: 1]
+  accommodation: [pair, double_room, density: 3, compute_nodes: 1]
 
 execution:
   progression: linear

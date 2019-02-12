@@ -8,7 +8,7 @@ description: >
 
 deployment:
   template: l3_north_south_no_fip.hot
-  accommodation: [double_room, density: 8, compute_nodes: 1]
+  accommodation: [double_room, density: 3, compute_nodes: 1]
 
 execution:
   progression: linear

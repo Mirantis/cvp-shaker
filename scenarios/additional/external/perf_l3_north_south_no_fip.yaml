@@ -16,7 +16,7 @@ execution:
   -
     title: Ping
     class: flent
-    host: ikoula.testdebit.info
+    host: bouygues.iperf.fr
     method: ping
     time: 10
     sla:
@@ -24,14 +24,14 @@ execution:
   -
     title: TCP egress
     class: iperf3
-    host: ikoula.testdebit.info
+    host: bouygues.iperf.fr
     sla:
     - "[type == 'agent'] >> (stats.bandwidth.avg > 5000)"
     - "[type == 'agent'] >> (stats.retransmits.max < 10)"
   -
     title: TCP ingress
     class: iperf3
-    host: ikoula.testdebit.info
+    host: bouygues.iperf.fr
     reverse: yes
     sla:
     - "[type == 'agent'] >> (stats.bandwidth.avg > 5000)"
@@ -39,7 +39,7 @@ execution:
   -
     title: UDP egress
     class: iperf3
-    host: ikoula.testdebit.info
+    host: bouygues.iperf.fr
     udp: on
     bandwidth: 0
     datagram_size: 32
@@ -48,7 +48,7 @@ execution:
   -
     title: UDP ingress
     class: iperf3
-    host: ikoula.testdebit.info
+    host: bouygues.iperf.fr
     reverse: yes
     udp: on
     bandwidth: 0
